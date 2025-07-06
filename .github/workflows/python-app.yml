@@ -40,7 +40,7 @@ jobs:
 
       - name: Create IAM user and send credentials
         run: |
-          python scripts/create_user_and_email.py \
+          python create_user_and_email.py \
             "${{ github.event.inputs.iam_username }}" \
             "${{ github.event.inputs.iam_group }}" \
             "${{ github.event.inputs.iam_tags }}" \
